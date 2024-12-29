@@ -52,15 +52,15 @@
 }
 
 .create-content{
+    display: flex;
     flex-direction: column;
-    flex: 1 1;
+    width: 40%;
     gap: .8rem;
-    max-width: 90%;
     background-color: rgb(83, 93, 6);
-    padding: 1rem 0 1rem 1rem;
-    margin: 0 .3rem;
+    padding: 1rem .7rem;
     border-radius: .4rem;
     font-size: .85rem;
+    text-align: center;
 }
 
 .create-content p{
@@ -73,7 +73,12 @@
 
 .create-content button{
     color: black;
-    font-weight: bold;
+    border: none;
+    transition: all ease .3s;
+    align-self:center;
+}
+.create-content button:hover{
+    opacity: .6;
 }
 
 /* ---------------- libfooter -------------------- */
@@ -84,7 +89,10 @@
     align-items: start;
     gap: .8rem;
     padding: .6rem;
-    margin: 1rem;
+    position: absolute;
+    bottom: 13%;
+    left: 2%;
+    z-index: 99;
 }
 
 .libfooter p{
@@ -100,6 +108,10 @@
     color: white;
     background-color: rgb(18, 18, 18);
     border: 1px solid white;
+    transition: all ease 0.3s;
+}
+.libfooter button:hover{
+    filter: invert(1);
 }
 
 
