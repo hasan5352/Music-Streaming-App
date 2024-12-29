@@ -1,0 +1,37 @@
+.home{
+    width: 100%;
+}
+.home div{
+    display: flex;
+    padding: 0 0 0 1.3rem;
+    gap: 1.5vw;
+    align-items: center;
+    height: 8vh;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.home div:hover{
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.home .homelogo{
+    padding-top: .3vh;
+}
+.home .homesearch{
+    padding-bottom: .3vh;
+}
+
+.home .searchicon, 
+.home .logo{
+    height: 5vh;
+    width: 2.5vw;
+}
+.home .searchicon:hover,
+.home p:hover {
+    opacity: .4;
+}
+.home .searchicon,
+.home p {
+    transition: opacity 0.3s ease;
+}
+

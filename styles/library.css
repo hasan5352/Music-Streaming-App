@@ -1,0 +1,105 @@
+
+.library{
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 1.5vw;
+    position: relative;
+}
+.library button{
+    padding: .4rem .8rem .4rem .6rem;
+    align-self: flex-start;
+    border-radius: 1.5rem;
+}
+/* ------------- yourlib --------------- */
+.yourlib{
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem .8rem 0 1.3rem;
+    height: 5vh;
+    font-size: 1.1rem;
+}
+.yourlib .with-icon{
+    align-items: center;
+    gap: 1.5vw;
+}
+.with-icon img{
+    height: 5vh;
+    width: 2.5vw;
+}
+
+.yourlib img:hover, 
+.yourlib p:hover{
+    opacity: .4;
+    cursor: pointer;
+}
+.yourlib img, 
+.yourlib p {
+    transition: opacity 0.3s ease;
+}
+
+/* ---------------- create-content -------------------- */
+
+.create-content-container{
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: space-around;
+    height: 40vh;
+    overflow: auto;
+}
+.create-content-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.create-content{
+    flex-direction: column;
+    flex: 1 1;
+    gap: .8rem;
+    max-width: 90%;
+    background-color: rgb(83, 93, 6);
+    padding: 1rem 0 1rem 1rem;
+    margin: 0 .3rem;
+    border-radius: .4rem;
+    font-size: .85rem;
+}
+
+.create-content p{
+    font-size: 1rem;
+    overflow-wrap: break-word;
+}
+.create-content .secondP{
+    opacity: .8;
+}
+
+.create-content button{
+    color: black;
+    font-weight: bold;
+}
+
+/* ---------------- libfooter -------------------- */
+
+.libfooter{
+    flex-direction: column;
+    text-align: center;
+    align-items: start;
+    gap: .8rem;
+    padding: .6rem;
+    margin: 1rem;
+}
+
+.libfooter p{
+    font-size: .8rem;
+    opacity: .6;
+    color: white;
+    word-wrap: break-word;
+}
+.libfooter button{
+    gap: .6rem;
+    font-weight: normal;
+    align-items: center;
+    color: white;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid white;
+}
+
+
