@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="styles/library.css">
 	<link rel="stylesheet" href="styles/header.css">
 	<link rel="stylesheet" href="styles/playlists.css">
+	<link rel="stylesheet" href="styles/playbar.css">
 </head>
 <body>
 
@@ -102,9 +103,43 @@
 
 		</section>
 
+		<section class="playbar flex">
+
+			<div class="playbar-left">
+				<img class="playbar-songImg" src="photos/thumbnail-3.webp" alt="">
+				<div>
+					<p class="playbar-songName">Dus Bahane</p>
+					<p class="playbar-artistName">Vishal-Shekar, KK, Arijit Singh	</p>
+				</div>
+				<img class="playbar-addImg" src="photos/add.png" alt="OOPS">
+			</div>
+
+			<div class="playbar-mid">
+				<div class="playbar-controlDiv">
+					<img class="prevbtn" src="photos/prevbtn2.png" alt="">
+					<img class="playbtn" src="photos/playbtn.png" alt="">
+					<img class="nextbtn" src="photos/nextbtn2.png" alt="">
+				</div>
+				<div class="playbar-durationDiv">
+					<p class="start-duration">0:00</p>
+					<input type="range" class="duration-slider" name="duration-slider" min="0" max="100" step="1">
+					<p class="end-duration">1:00</p>
+				</div>
+			</div>
+
+			<div class="playbar-right">
+				<img class="micbtn" src="photos/micbtn.png" alt="">
+				<img class="queuebtn" src="photos/queue.png" alt="">
+				<img class="volumebtn" src="photos/volumebtn.png" alt="">
+				<input type="range" class="volume-slider" name="volume-slider" min="0" max="100" step="1">
+			</div>
+
+		</section>
+
 	</main>
 
 
-	<script src="scripts/script.js"></script>
+	<script type="module" src="scripts/config.js"></script>
+	<script type="module" src="scripts/script.js"></script>
 </body>
 </html>

@@ -56,7 +56,7 @@
     flex-direction: column;
     width: 40%;
     gap: .8rem;
-    background-color: rgb(83, 93, 6);
+    background-color: rgb(59, 59, 59);
     padding: 1rem .7rem;
     border-radius: .4rem;
     font-size: .85rem;
@@ -90,7 +90,7 @@
     gap: .8rem;
     padding: .6rem;
     position: absolute;
-    bottom: 13%;
+    bottom: 15%;
     left: 2%;
     z-index: 99;
 }
@@ -113,5 +113,11 @@
 .libfooter button:hover{
     filter: invert(1);
 }
-
-
+.library img,
+.library button{
+    cursor: pointer;
+}
+.library img:active,
+.library button:active{
+    transform: scale(.9);
+}

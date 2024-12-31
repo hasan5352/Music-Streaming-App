@@ -29,7 +29,12 @@ header button:hover{
 header img, 
 header button{
     transition: all ease-in .15s;
+    cursor: pointer;
 }
 header img:hover{
     opacity: .6;
+}
+header img:active, 
+header button:active{
+    transform: scale(.9);
 }

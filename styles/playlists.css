@@ -5,9 +5,18 @@
     overflow: auto;
 }
 .song-playlists::-webkit-scrollbar {
-    display: none; 
+    width: 1rem; 
 }
-
+.song-playlists::-webkit-scrollbar-track {
+    background: #1a1a1a; 
+}
+.song-playlists::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 10px; 
+}
+.song-playlists::-webkit-scrollbar-thumb:hover {
+    background: #666; 
+}
 .card-container{
     display: flex;
     flex-wrap: nowrap;
@@ -21,15 +30,20 @@
 .song-playlists .card{
     width: 15%;
     height: 30vh;
-    padding: .7rem .7rem 1rem .7rem;
+    padding: .7rem;
     border-radius: .6rem;
     box-sizing: border-box;
     transition: all ease-in .15s;
     position: relative;
+    cursor: pointer;
 }
 .song-playlists .card:hover{
     background-color: rgba(255, 255, 255, 0.06);
 }
+.song-playlists .card:active{
+    transform: scale(.97);
+}
+
 
 .song-playlists .card-img{
     border-radius: .6rem;
@@ -37,10 +51,11 @@
     width: 100%;
 }
 .song-playlists .card-h2{
-    font-size: 1.2rem;
+    font-size: .9rem;
 }
 .song-playlists .card-p{
     font-size: .8rem;
+    opacity: .7;
 }
 .song-playlists .card-h2, 
 .song-playlists .card-p{
@@ -48,6 +63,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     padding-top: .6rem;
+    letter-spacing: .2px;
 }
 
 .song-playlists .card-play{
@@ -65,8 +81,12 @@
     transition: all .2s ease-in;
 }
 .song-playlists .card-play:hover{
-    padding: 1px;
+    transform: scale(1.05);
     background-color: rgb(56, 201, 56);
+}
+.song-playlists .card-play:active{
+    transform: scale(.9);
+    background-color: rgb(18, 187, 18);
 }
 .song-playlists .card:hover .card-play{
     opacity: 1;
